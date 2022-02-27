@@ -1,0 +1,10 @@
+stages:
+  load_data:
+    cmd: python src/load_data.py 
+    deps:
+    - src/get_data.py
+    - src/load_data.py
+    - Data_Given/winequality.csv
+    outs:
+    - Data/raw/winequality.csv
+    
